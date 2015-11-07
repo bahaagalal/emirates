@@ -1,0 +1,30 @@
+{
+  "name": "emirates",
+  "version": "1.0.0",
+  "author": "BahaaGalal <bahaa.galal@crowdanalyzer.com>",
+  "description": "emirates hackathon app",
+  "contributors": [
+    {
+      "name": "Bahaa Galal <bahaagalal>",
+      "email": "bahaa.galal@crowdanalyzer.com"
+    }
+  ],
+  "main": "./src/app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bahaagalal/emirates.git"
+  },
+  "engine": {
+    "node": ">=0.12"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec ./test/*"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3"
+  },
+  "dependencies": {
+    "is_js": "^0.7.4"
+  }
+}
