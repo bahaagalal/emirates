@@ -8,8 +8,8 @@ var Routes = function(app){
 
 	app.get('/one', function(req, res){
 		res.render('search', {
-			from: 'Cairo (CAI)',
-			to: 'Calgary (YYC)',
+			from: 'Calgary (YYC)',
+			to: 'Cairo (CAI)',
 			results: 'results/1'
 		});
 	});
