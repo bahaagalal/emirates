@@ -1,3 +1,93 @@
 <% layout('layout') -%>
 
-Search
+<div class="wrapper">
+	<h1 class="page-title">Make a booking</h1>
+	<ul class="travel-options">
+		<li>
+			<a href="#">
+				<input type="radio" checked="checked">
+				<span>Return</span>
+			</a>
+		</li><li>
+			<a href="#">
+				<input type="radio">
+				<span>One Way</span>
+			</a>
+		</li><li>
+			<a href="#">
+				<input type="radio">
+				<span>Advanced Search</span>
+			</a>
+		</li>
+	</ul>
+	<ul class="travel-details">
+		<li>
+			<ul>
+				<li>
+					<label>From </label>
+					<input type="text" value="<%= from %>">
+				</li><li>
+					<label>To </label>
+					<input type="text" value="<%= to %>">
+				</li>
+			</ul>
+		</li>
+		<li>
+			<ul>
+				<li>
+					<label>Departing </label>
+					<input type="text" value="2015-11-15">
+				</li><li>
+					<label>Returning </label>
+					<input type="text" value="2015-11-30">
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<ul class="more-travel-details">
+		<li>
+			<label>Class</label>
+			<select>
+				<option>Economy</option>
+				<option>Business</option>
+				<option>First</option>
+			</select>
+		</li><li>
+			<label>Adults</label>
+			<select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+				<option>9</option>
+			</select>
+		</li><li>
+			<label>Children</label>
+			<select>
+				<option>0</option>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+				<option>7</option>
+				<option>8</option>
+			</select>
+		</li><li>
+			<label>Infants</label>
+			<select>
+				<option>0</option>
+				<option>1</option>
+			</select>
+		</li>
+	</ul>
+	<a href="/<%= results %>" id="search">
+		<span class="fa fa-angle-right"></span>
+		<span class="label">Search Flights</span>
+	</a>
+</div>

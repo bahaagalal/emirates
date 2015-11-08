@@ -1,1 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    background: none;
+    border: none;
+    outline: none;
+    list-style: none;
+    resize: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
 
+a, a:hover, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a img, a:hover img, a:visited img {
+    border: none;
+}
+
+html, body {
+    width: 100%;
+	height: 100%;
+    direction: ltr;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    background-color: #FFFFFF;
+    color: #333333;
+	overflow-y: auto;
+	font-size: 15px;
+}
+
+.display-none {
+	display: none;
+}
+
+.header {
+	background-color: #333333;
+	color: #FFF;
+	width: 100%;
+	height: 42px;
+	text-align: right;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.header li {
+	display: inline-block;
+	padding: 12px;
+}
+
+.header li input[type="text"] {
+	font-size: 15px;
+	padding: 0px 20px;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav {
+	background-color: #F5F5F5;
+	width: 100%;
+	height: 55px;
+	box-shadow: inset 0px -1px 0 #cacaca;
+}
+
+.nav ul {
+	margin-left: 250px;
+}
+
+.nav li {
+	display: inline-block;
+	padding: 12px 0px;
+}
+
+.nav li a {
+	display: block;
+	font-weight: 700;
+	padding: 7px 30px;
+	border-right: 1px solid #ddd;
+}
+
+.logo-wrapper {
+	position: relative;
+}
+
+.logo {
+	display: block;
+	position: absolute;
+	z-index: 999;
+	top: 0px;
+	left: 0px;
+}
+
+.page-title {
+	font-weight: 600;
+	margin-top: 80px;
+	font-size: 20px;
+}
+
+.travel-options {
+	margin-top: 30px;
+	border: 1px solid #c4c4c4;
+}
+
+.travel-options li {
+	display: inline-block;
+	width: 319px;
+	text-align: center;
+	background-color: #efefef;
+	padding: 15px 0px;
+	color: #666666;
+	font-weight: 600;
+	border-left: 1px solid #c4c4c4;
+}
+
+.travel-options li:first-child {
+	border-left: none;
+}
+
+.travel-options li span, .travel-options li input {
+	vertical-align: middle;
+}
+
+.travel-options li span {
+	margin-left: 5px;
+}
+
+.travel-details {
+	margin-top: 30px;
+}
+
+.travel-details ul {
+	margin-bottom: 30px;
+}
+
+.travel-details ul li {
+	display: inline-block;
+	width: 50%;
+}
+
+.travel-details label {
+	display: inline-block;
+	width: 70px;
+	text-align: right;
+}
+
+.travel-details input {
+	border: 1px solid #c4c4c4;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px 20px;
+	margin-left: 10px;
+}
+
+.travel-details input, .travel-details label {
+	vertical-align: middle;
+}
+
+.more-travel-details li {
+	display: inline-block;
+	width: 25%;
+}
+
+.more-travel-details li select, .more-travel-details li label {
+	vertical-align: middle;
+}
+
+.more-travel-details select {
+	-webkit-appearance: none;
+	padding: 10px 20px;
+	font-weight: 600;
+	margin-left: 10px;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	background-color: #EFEFEF;
+	border: 1px solid #c4c4c4;
+}
+
+a#search {
+	display: block;
+	margin-top: 30px;
+	width: 180px;
+	padding: 15px 20px;
+	background-color: #b32c2d;
+	color: #FFF;
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+a#search .fa {
+	margin-right: 5px;
+}
+
+.flight-details {
+	margin-top: 30px;
+	border-bottom: 1px solid #c4c4c4;
+	padding-bottom: 10px;
+}
+
+.flight-details li {
+	display: inline-block;
+	border-left: 1px solid #c4c4c4;
+	width: 160px;
+	text-align: center;
+}
+
+.flight-details li:first-child {
+	border-left: none;
+}
+
+.flight-details li label {
+	display: block;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 700;
+	margin-bottom: 10px;
+	margin-top: 5px;
+}
+
+.page-subtitle {
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 30px;
+}
+
+.trip-table {
+	border: 1px solid #c4c4c4;
+	background-color: #EFEFEF;
+	margin-top: 30px;
+}
+
+.trip-table li {
+	display: inline-block;
+	border-left: 1px solid #c4c4c4;
+	padding: 10px 0px;
+	width: 120px;
+	text-align: center;
+}
+
+.trip-table li.price {
+	font-weight: 700;
+}
+
+.trip-table li:first-child {
+	border-left: none;
+}
+
+.trip-details {
+	background-color: #FFF;
+	color: #333;
+	border-bottom: 1px solid #c4c4c4;
+	border-left: 4px solid #b32c2d;
+}
+
+.trip-details li {
+	display: inline-block;
+	padding: 10px 0px;
+	padding-left: 10px;
+	width: 120px;
+}
+
+.trip-details li.price {
+	font-weight: 700;
+}
+
+.trip-experiences {
+	border-bottom: 1px solid #c4c4c4;
+	border-left: 4px solid #a5d8c7;
+}
+
+.trip-experiences li {
+	display: inline-block;
+}
+
+.trip-experiences .d {
+	font-weight: 400;
+	padding: 20px 30px;
+	line-height: 20px;
+}
+
+.trip-experiences .cap {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+}
+
+.trip-experiences span {
+	vertical-align: top;
+}
+
+.trip-experiences .city {
+	font-weight: 700;
+	font-size: 16px;
+	color: #000;
+}
+
+.trip-experiences .time {
+	font-weight: 300;
+	font-size: 13px;
+	color: #666;
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+
+.trip-experiences .experiences-title {
+	font-size: 16px;
+	color: #333;
+	margin-top: 20px;
+}
+
+.trip-experiences .thumbs {
+	margin-top: 5px;
+}
+
+.trip-experiences .thumbs li {
+	display: inline-block;
+}
+
+.trip-experiences .thumbs img {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+}
+
+.trip-experiences-details {
+	border-bottom: 1px solid #c4c4c4;
+	border-left: 4px solid #a5d8c7;
+}
+
+.city-experiences {
+	padding: 10px 20px;
+}
+
+.city-experiences h4 {
+	color: #333;
+	font-weight: 600;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.city-experiences .experience-time {
+	color: #666;
+	font-weight: 400;
+}
+
+.city-experiences .warning {
+	color: #b32c2d;
+}
+
+.chosen li {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.chosen li.display-none {
+	display: none;
+}
+
+.chosen {
+	margin: 10px 0px;
+}
+
+.chosen .fa {
+	color: #b32c2d;
+}
+
+.images li {
+	display: inline-block;
+	position: relative;
+}
+
+.images img {
+	width: 212px;
+	height: 130px;
+}
+
+.img-label {
+	color: #FFF;
+	font-weight: 600;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	font-size: 16px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 212px;
+	padding: 10px;
+}
+
+.trip-details-end {
+	margin-bottom: 20px;
+}
+
+.link-to-exp {
+	display: block;
+	border-bottom: 1px solid #c4c4c4;
+	border-left: 4px solid #a5d8c7;
+	font-weight: 600;
+	padding: 5px 10px;
+}
+
+.blue {
+	color: #1d9d74;
+}
